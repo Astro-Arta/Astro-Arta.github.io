@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amirreza Shojaei Baghini — Physics &amp; Astronomy</title>
+<meta name="description" content="Academic portfolio of Amirreza Shojaei Baghini, M.Sc. Physics student at Sharif University of Technology researching cosmology, non-local gravity, extrasolar planets, planet formation, and protoplanetary disks.">
+<meta name="theme-color" content="#070812">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Literata:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="starfield" aria-hidden="true"></canvas>
+<div class="nebula-bg" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo" aria-label="Amirreza Shojaei Baghini — home">A.S.B. <span class="nav-logo-sep">&middot;</span> <span class="mono">&Theta;&Phi;</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#cv">CV</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header id="home" class="hero">
+  <svg class="constellation" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g class="constellation-lines">
+      <line x1="120" y1="90" x2="230" y2="150"></line>
+      <line x1="230" y1="150" x2="210" y2="270"></line>
+      <line x1="210" y1="270" x2="330" y2="330"></line>
+      <line x1="330" y1="330" x2="470" y2="300"></line>
+      <line x1="470" y1="300" x2="560" y2="180"></line>
+      <line x1="560" y1="180" x2="490" y2="80"></line>
+      <line x1="490" y1="80" x2="360" y2="60"></line>
+      <line x1="360" y1="60" x2="230" y2="150"></line>
+    </g>
+    <g class="constellation-stars">
+      <circle cx="120" cy="90" r="3"></circle>
+      <circle cx="230" cy="150" r="4"></circle>
+      <circle cx="210" cy="270" r="2.5"></circle>
+      <circle cx="330" cy="330" r="3.5"></circle>
+      <circle cx="470" cy="300" r="2.5"></circle>
+      <circle cx="560" cy="180" r="4"></circle>
+      <circle cx="490" cy="80" r="3"></circle>
+      <circle cx="360" cy="60" r="2.5"></circle>
+    </g>
+  </svg>
+
+  <div class="hero-content">
+    <p class="eyebrow mono">M.Sc. PHYSICS &middot; SHARIF UNIVERSITY OF TECHNOLOGY</p>
+    <h1>Amirreza Shojaei Baghini</h1>
+    <p class="hero-tagline">Exploring Astrophysics, planets, and the tools we use to understand the universe.</p>
+    <div class="hero-cta">
+      <a href="#research" class="btn btn-primary">View Research</a>
+      <a href="CV.pdf" class="btn btn-ghost" download>Download CV</a>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+    <span class="mono">SCROLL</span>
+    <span class="scroll-line"></span>
+  </a>
+</header>
+
+<main id="main">
+
+  <section id="about" class="section about">
+    <p class="eyebrow mono">NGC-001 &middot; ABOUT</p>
+    <div class="about-grid">
+      <div class="about-portrait">
+        <div class="portrait-ring"></div>
+        <img class="portrait-photo" src="profile.jpg" alt="Profile photograph" loading="lazy" decoding="async">
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>I'm an M.Sc. Physics student at Sharif University of Technology in Tehran, Iran. My current thesis focuses on the integrated Sachs–Wolfe (ISW) effect in the local limit of non-local gravity, under the supervision of Prof. Shant Baghram.</p>
+        <p>My broader research interests include extrasolar planet detection, planet formation, protoplanetary disks, and the development of open-source software for astronomical data analysis.</p>
+        <ul class="fun-facts mono">
+          <li>Based in <span>Tehran, Iran</span></li>
+          <li>Current degree <span>M.Sc. Physics</span></li>
+          <li>Research focus <span>Cosmology &amp; Astrophysics</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="cv" class="section cv">
+    <p class="eyebrow mono">NGC-002 &middot; CURRICULUM VITAE</p>
+    <div class="cv-header">
+      <h2>Curriculum Vitae</h2>
+      <a class="btn btn-outline" href="CV.pdf" download>Download Full CV (PDF)</a>
+    </div>
+
+    <div class="cv-block">
+      <h3>Education</h3>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <span class="timeline-date mono">2025 &ndash; Present</span>
+          <h4>M.Sc. in Physics</h4>
+          <p class="timeline-org">Sharif University of Technology, Tehran, Iran</p>
+          <p>Thesis: <em>ISW in the local limit of non-local gravity</em></p>
+          <p class="timeline-note">Advisor: Prof. Shant Baghram</p>
+          <p class="timeline-note">Relevant coursework: Astrobiology, Cosmology, Radio Astronomy, Electrodynamics, Astronomy Lab.</p>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-date mono">2019 &ndash; 2024</span>
+          <h4>B.Sc. in Mining Engineering</h4>
+          <p class="timeline-org">Amirkabir University of Technology, Tehran, Iran</p>
+          <p>Thesis: <em>Investigation of Zinc Recovery from Sulfide Ore</em></p>
+          <p class="timeline-note">Advisor: Dr. Haghighi</p>
+        </li>
+      </ol>
+    </div>
+
+    <div class="cv-block">
+      <h3>Research Experience</h3>
+      <ol class="timeline">
+        <li class="timeline-item">
+            <span class="timeline-date mono">Oct 2026 &ndash; Ongoing</span>
+            <h4>Visiting student</h4>
+            <p class="timeline-org">School of Astronomy &mdash;  Institute for Research in Fundamental Sciences (IPM)</p>
+            <p>Developing a pipeline for the reduction and analysis of raw ALMA data.</p>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-date mono">Jun 2024 &ndash; Aug 2024</span>
+          <h4>Intern</h4>
+          <p class="timeline-org">NICICO &mdash; Sarcheshmeh Mining Complex, Leaching and Bioleaching Unit</p>
+          <p>Investigated the effect of pH on solvent extraction from copper PLS.</p>
+        </li>
+      </ol>
+    </div>
+
+    <div class="cv-block">
+      <h3>Technical Skills</h3>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4 class="mono">Programming</h4>
+          <div class="tags">
+            <span>Python</span><span>SQL</span><span>Linux</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4 class="mono">Scientific Tools</h4>
+          <div class="tags">
+            <span>NumPy</span><span>SciPy</span><span>Astropy</span><span>Astroquery</span><span>Matplotlib</span><span>Git</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4 class="mono">Scientific Writing</h4>
+          <div class="tags">
+            <span>LaTeX</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cv-block">
+      <h3>Teaching &amp; Outreach</h3>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <span class="timeline-date mono">2025</span>
+          <h4>Teaching Assistant &mdash; General Physics I</h4>
+          <p class="timeline-org">Department of Physics, Sharif University of Technology</p>
+          <p>Led weekly problem sessions and graded assignments for 43 undergraduate students.</p>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-date mono">2017 &ndash; Present</span>
+          <h4>Private Tutor &mdash; Physics and Astronomy</h4>
+          <p class="timeline-org">Self Employed</p>
+          <p>Taught astronomy and physics to Olympiad participants, high school students, and undergraduates.</p>
+        </li>
+      </ol>
+    </div>
+
+    <div class="cv-block">
+      <h3>Honors &amp; Awards</h3>
+      <ul class="plain-list">
+        <li><span class="mono">2017</span> &mdash; National Iranian Olympiad on Astronomy and Astrophysics, Silver Medalist</li>
+        <li><span class="mono">2016</span> &mdash; National Iranian Olympiad on Astronomy and Astrophysics, Bronze Medalist</li>
+      </ul>
+    </div>
+
+    <div class="cv-block">
+      <h3>Languages</h3>
+      <div class="tags">
+        <span>Persian — Native</span><span>English — Fluent</span><span>French — Intermediate</span><span>Arabic — Intermediate</span>
+      </div>
+    </div>
+
+    <div class="cv-block">
+      <h3>English Proficiency</h3>
+      <div class="language-score">
+        <div><strong>IELTS 8.0</strong><span>Speaking 8.0 &middot; Writing 7.5 &middot; Listening 8.0 &middot; Reading 8.5</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="research" class="section research">
+    <p class="eyebrow mono">NGC-003 &middot; RESEARCH</p>
+    <h2>Research Interests</h2>
+
+    <div class="research-grid">
+      <article class="research-card">
+        <span class="catalog-id mono">01</span>
+        <h3>Non-Local Gravity &amp; Cosmology</h3>
+        <p>Current M.Sc. thesis work on the integrated Sachs–Wolfe (ISW) effect in the local limit of non-local gravity.</p>
+        <div class="tags"><span>Cosmology</span><span>Gravity</span><span>ISW</span></div>
+        <a href="#contact" class="card-link">Discuss this research <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="research-card">
+        <span class="catalog-id mono">02</span>
+        <h3>Extrasolar Planets</h3>
+        <p>I am  interested in extrasolar planet detection and the observational methods used to identify and characterize planets beyond the Solar System.</p>
+        <div class="tags"><span>Exoplanets</span><span>Detection</span><span>Astronomy</span></div>
+        <a href="#contact" class="card-link">Discuss this research <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="research-card">
+        <span class="catalog-id mono">03</span>
+        <h3>Planet Formation &amp; Protoplanetary Disks</h3>
+        <p>Interested in the physical processes governing planet formation and the evolution of protoplanetary disks.</p>
+        <div class="tags"><span>Planet Formation</span><span>Protoplanetary Disks</span></div>
+        <a href="#contact" class="card-link">Discuss this research <span aria-hidden="true">→</span></a>
+      </article>
+
+      <article class="research-card">
+        <span class="catalog-id mono">04</span>
+        <h3>Open-Source Astronomy Software</h3>
+        <p>Interested in developing open-source software and computational workflows for astronomical data analysis.</p>
+        <div class="tags"><span>Python</span><span>Astropy</span><span>Astroquery</span></div>
+        <a href="#contact" class="card-link">Discuss this research <span aria-hidden="true">→</span></a>
+      </article>
+    </div>
+
+    <div class="publications">
+      <h3>Publications</h3>
+      <p class="muted">No publications are listed on the current CV.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <p class="eyebrow mono">NGC-004 &middot; CONTACT</p>
+    <h2>Get in Touch</h2>
+    <p>For physics, astronomy, teaching, research, or collaboration inquiries, feel free to reach out.</p>
+    <div class="contact-links">
+      <a href="mailto:amirnxv@gmail.com" class="contact-link">
+        <span class="contact-label mono">EMAIL</span>
+        <span>amirnxv@gmail.com</span>
+      </a>
+      <a href="mailto:ar.shojaei@physics.sharif.edu" class="contact-link">
+        <span class="contact-label mono">UNIVERSITY EMAIL</span>
+        <span>ar.shojaei@physics.sharif.edu</span>
+      </a>
+      <a href="https://github.com/Astro-Arta" class="contact-link" target="_blank" rel="noopener">
+        <span class="contact-label mono">GITHUB</span>
+        <span>github.com/Astro-Arta</span>
+      </a>
+      <a href="https://www.linkedin.com/in/amirreza-shojaei-baghini-0b158638a/" class="contact-link" target="_blank" rel="noopener">
+        <span class="contact-label mono">LINKEDIN</span>
+        <span>linkedin.com/in/amirreza-shojaei-baghini-0b158638a</span>
+      </a>
+      <a href="https://astro-arta.github.io" class="contact-link" target="_blank" rel="noopener">
+        <span class="contact-label mono">WEB</span>
+        <span>astro-arta.github.io</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; 2026 Amirreza Shojaei Baghini. Built with curiosity, code, and a little dark matter.</p>
+  <button class="to-top" id="toTop" aria-label="Back to top">&uarr; Top</button>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
